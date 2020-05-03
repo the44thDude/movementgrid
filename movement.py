@@ -31,6 +31,7 @@ def makegrid1(num):
     x=0
     y=0
     while buttons!=num:
+##yeah i know i should be using "For.. in.. etc." but i couldn't remember the right syntax last night abd I am too lazy to change it            
         Button_1 = Button(root, bg='#fff',width=2,height=1)
         Button_1.grid(row=x,column=y)
         y+=1
@@ -62,8 +63,7 @@ def makegrid2(num):
 ##accociated with the number of the button to a 1 instead of a 0 therby allowing me to check if a button has been activated and then
 ##theoretically, perform actions that change that button and the other buttons around it:
 
-
-def makegrid(num):
+def makegrid3(num):
     global gridstats
     blist=[]
     while len(blist)!=num:
@@ -85,7 +85,6 @@ def makegrid(num):
         buttons+=1
 
 ##I am not even sure if #2 worked.
-makegrid(256)
 
 
 
